@@ -12,7 +12,7 @@ jobs:
       - uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: 9.2.0
-      - run: unzip aurora-visuals-source-1.21.11-enhanced.zip
+      - run: unzip AuroraVisuals_1.21.11_sources.zip
       - run: gradle build
         working-directory: aurora
       - uses: actions/upload-artifact@v4
